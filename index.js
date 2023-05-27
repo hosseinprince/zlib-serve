@@ -21,8 +21,14 @@ function serve(req, res, next) {
         if (error) {
             next();
         }
-        else if (stats.isFile()) {
+        else if (stats.isFile() && path.indexOf('.svg')===-1) {
             serveCompressed(path, opt.type, res);
+        }
+        else if (stats.isFile() && path.indexOf('.svg')>-1){
+            fs.readFile(path, function(err, content) {
+                response.writeHead(200, { 'Content-Type': 'image/svg+xml' });
+                response.end(content, 'utf-8');
+            })
         }
     })
 }
