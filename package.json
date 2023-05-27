@@ -1,13 +1,24 @@
 {
   "name": "zlib-serve",
   "version": "0.1.0",
-  "private": true,
-  "scripts": {
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "description": "## Project setup ``` npm install zlib-serve ```",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hosseinprince/zlib-serve.git"
   },
-  "dependencies": {
-    
+  "keywords": [
+    "zlib",
+    "file",
+    "server"
+  ],
+  "author": "hossein akbarzadeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hosseinprince/zlib-serve/issues"
   },
-  "devDependencies": {
-   
-  }
+  "homepage": "https://github.com/hosseinprince/zlib-serve#readme"
 }
